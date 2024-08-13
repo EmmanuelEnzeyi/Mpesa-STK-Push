@@ -4,10 +4,9 @@ from requests.auth import HTTPBasicAuth
 from datetime import datetime
 import base64
 
-
 class MpesaC2bCredential:
-    consumer_key = '77bgGpmlOxlgJu6oEXhEgUgnu0j2WYxA'
-    consumer_secret = 'viM8ejHgtEmtPTHd'
+    consumer_key = 'mX9gahGcxr4RQG31QSychrwn4Beddt3s'
+    consumer_secret = 'LKFAU3Csmq7JAV4u'
     api_URL = 'https://sandbox.safaricom.co.ke/oauth/v1/generate?grant_type=client_credentials'
 
 
@@ -20,9 +19,9 @@ class MpesaAccessToken:
 
 class LipanaMpesaPpassword:
     lipa_time = datetime.now().strftime('%Y%m%d%H%M%S')
-    Business_short_code = "174379"
+    Business_short_code = "6211013"
     OffSetValue = '0'
-    passkey = 'bfb279f9aa9bdbcf158e97dd71a467cd2e0c893059b10f78e6b72ada1ed2c919'
+    passkey = 'XdPmvdqgJpwZQi6SNvva2bVWi1aXpu9kGYhhlpPQDsX2XV9rmbHlBsZ86MNTFDVByo/sMWA+qTxzXZZLcr8ZwADdDIfjzlqHqzQbv4EJn67qWlLSg5fw37wxfiaDZP7I4+lwyeT1+cqIVCb+Gnjw9LB9aD7Blb8RDKQvgl+2uVSUZT3b7roCeY+m5ZbFLFTWTVAIb4+T/8SMlMUaTsp4POp2dyR5K6DKm8ROPTFziiWW7FM/I6tT9p2cZlAF8EiuhQZpqU/EM1twhtH9ySsFGuXF4NhIY7vLbaLo1RNdX7VBMnfPG2J1RRIHryDi9vn3Xe5zXBMen/vXWjqJ9Ql1PQ=='
 
     data_to_encode = Business_short_code + passkey + lipa_time
 
